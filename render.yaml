@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: pdf-form-engine
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+    disk:
+      name: pdf-storage
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "extract_pdf_fields",
+    "description": "Extracts fields from a PDF file and returns form data",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "file_url": { "type": "string" }
+      },
+      "required": ["file_url"]
+    }
+  },
+  {
+    "name": "fill_pdf",
+    "description": "Fill a PDF from a URL and JSON fields",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "file_url": { "type": "string" },
+        "fields": { "type": "object" }
+      },
+      "required": ["file_url", "fields"]
+    }
+  }
+]

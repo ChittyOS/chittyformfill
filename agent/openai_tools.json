@@ -1,0 +1,26 @@
+[
+  {
+    "name": "compare_template_versions",
+    "description": "Compare two template versions and list added/removed/changed fields",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "templateA": { "type": "string" },
+        "templateB": { "type": "string" }
+      },
+      "required": ["templateA", "templateB"]
+    }
+  },
+  {
+    "name": "fill_pdf_with_fields",
+    "description": "Fill in a PDF file with provided field data",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "pdf_url": { "type": "string" },
+        "fields": { "type": "object" }
+      },
+      "required": ["pdf_url", "fields"]
+    }
+  }
+]

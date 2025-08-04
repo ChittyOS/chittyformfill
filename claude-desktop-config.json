@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pdf-form-engine": {
+      "command": "node",
+      "args": ["/Users/nickbianchi/mcp-server.js"]
+    }
+  }
+}
