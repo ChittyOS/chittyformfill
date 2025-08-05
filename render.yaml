@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: pdf-form-engine
+    name: chittyformfill
     runtime: node
     plan: free
     buildCommand: npm install
