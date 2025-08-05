@@ -1,14 +1,14 @@
 {
-  "name": "pdf-form-engine",
+  "name": "chittyformfill",
   "version": "1.0.0",
-  "description": "Intelligent PDF Form Engine with Claude/OpenAI Connectors",
+  "description": "ChittyFormFill - AI-powered PDF form extraction and filling API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "bin": {
-    "pdf-form-mcp": "./mcp-server.js"
+    "chittyformfill-mcp": "./mcp-server.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.6.0",
